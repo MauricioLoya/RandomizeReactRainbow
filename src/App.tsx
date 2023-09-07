@@ -23,6 +23,7 @@ function App() {
   const genetateRandomColors = () => {
     const newColors = [...colors]
     newColors.forEach((color, index) => {
+      color
       const newColor = Math.floor(Math.random() * 16777215).toString(16)
       newColors[index] = `#${newColor}`
     })
